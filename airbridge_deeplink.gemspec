@@ -28,8 +28,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Add dependencies
-  spec.add_dependency 'httparty', '~> 0.21'
-  spec.add_dependency 'json', '~> 2.6'
+  spec.add_dependency 'httparty', '~> 0.20.0'
+  spec.add_dependency 'json', '~> 2.6.0'
 
   # Add development dependencies
   spec.add_development_dependency 'rake', '~> 13.0'
