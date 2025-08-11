@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "airbridge_deeplink"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# Example usage:
+puts "AirbridgeDeeplink gem loaded!"
+puts "Version: #{AirbridgeDeeplink::VERSION}"
+puts ""
+puts "Example usage:"
+puts "  AirbridgeDeeplink.api_token = 'your-api-token'"
+puts "  client = AirbridgeDeeplink::Client.new"
+puts "  response = client.create_tracking_link(channel: 'my-channel')"
+puts ""
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+IRB.start(__FILE__)
