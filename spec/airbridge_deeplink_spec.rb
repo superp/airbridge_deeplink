@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-#
+
 require 'spec_helper'
 
 RSpec.describe AirbridgeDeeplink do
@@ -111,7 +111,7 @@ RSpec.describe AirbridgeDeeplink::Client do
 
     context 'when API returns 401' do
       before do
-        stub_request(:post, "https://api.airbridge.io/v1/tracking-links")
+        stub_request(:post, 'https://api.airbridge.io/v1/tracking-links')
           .to_return(status: 401, body: 'Unauthorized')
       end
 
@@ -122,7 +122,7 @@ RSpec.describe AirbridgeDeeplink::Client do
 
     context 'when API returns 400' do
       before do
-        stub_request(:post, "https://api.airbridge.io/v1/tracking-links")
+        stub_request(:post, 'https://api.airbridge.io/v1/tracking-links')
           .to_return(status: 400, body: 'Bad Request')
       end
 
